@@ -1,19 +1,16 @@
+<svelte:head>
+    <meta property="og:description" content="several popcats" />
+	<meta property="description" content="several popcats" />
+</svelte:head>
+
 <script>
     import Popcat from "./popcat.svelte";
+    import Unsel from "./unsel.svelte";
 </script>
 
-<div id="unsel">
+<Unsel>
     <Popcat />
     <Popcat />
     <Popcat />
     <Popcat />
-</div>
-
-<style>
-    div {
-        -ms-user-select: none;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-</style>
+</Unsel>

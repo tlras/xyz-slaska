@@ -1,5 +1,6 @@
 <script>
     let audio;
+    export let width = "100px";
 
     const CLOSED = "https://slaska.xyz/closed.png";
     const OPEN = "https://slaska.xyz/open.png";
@@ -21,7 +22,7 @@
 <img
     src={cat_src}
     alt="pop cat"
-    width="100px"
+    {width}
     on:pointerdown={pop}
     on:pointerout={unpop}
     on:pointerup={unpop}
