@@ -17,6 +17,7 @@
 </script>
 
 <audio src="https://slaska.xyz/pop.ogg" bind:this={audio}></audio>
+
 <img
     src={cat_src}
     alt="pop cat"
@@ -24,4 +25,5 @@
     on:pointerdown={pop}
     on:pointerout={unpop}
     on:pointerup={unpop}
+    draggable="false"
 >
