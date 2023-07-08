@@ -6,8 +6,10 @@
 <script>
     import Popcat from "../popcat.svelte";
     import Unsel from "../unsel.svelte";
+    let count = 0;
 </script>
 
 <Unsel>
-    <Popcat width="400px" />
+    <Popcat width="400vw" on:pop={() => count++} />
 </Unsel>
+<p>Pops: {count.toLocaleString()}</p>
