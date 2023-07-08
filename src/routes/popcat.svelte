@@ -22,5 +22,6 @@
     alt="pop cat"
     width="100px"
     on:pointerdown={pop}
+    on:pointerout={unpop}
     on:pointerup={unpop}
 >
