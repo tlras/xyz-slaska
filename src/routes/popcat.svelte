@@ -30,6 +30,5 @@
     on:pointerdown={pop}
     on:pointerout={unpop}
     on:pointerup={unpop}
-    on:taphold|preventDefault={() => {}}
     draggable="false"
 >
