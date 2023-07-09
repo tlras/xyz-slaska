@@ -5,8 +5,8 @@
     let audio;
     export let width = "100vw";
 
-    const CLOSED = "https://slaska.xyz/closed.png";
-    const OPEN = "https://slaska.xyz/open.png";
+    const CLOSED = "/closed.png";
+    const OPEN = "/open.png";
     let src = CLOSED;
 
     function pop() {
@@ -21,7 +21,7 @@
     }
 </script>
 
-<audio src="https://slaska.xyz/pop.ogg" bind:this={audio}></audio>
+<audio src="/pop.ogg" bind:this={audio}></audio>
 
 <img
     {src}
@@ -30,5 +30,7 @@
     on:pointerdown={pop}
     on:pointerout={unpop}
     on:pointerup={unpop}
+    on:taphold|preventDefault|stopPropagation={false}
+    on:contextmenu|preventDefault|stopPropagation={false}
     draggable="false"
 >
